@@ -12,6 +12,7 @@ def supprimer_tache(dico: dict, nom: str) -> dict:
     # Supprime toutes les entrées dont la valeur correspond au nom donné
     keys_to_delete = [k for k, v in dico.items() if v == nom]
     for k in keys_to_delete:
+        print(f"clée supprimée : {k.index()}")
         del dico[k]
     return dico
 
@@ -28,4 +29,5 @@ def run_card():
     ajouter_tache(d,"seb ", "Anice")
     print(d)
 if __name__ == '__main__':
+    print("dans card.py")
     run_card()
