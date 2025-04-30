@@ -16,7 +16,7 @@ def supprimer_tache(dico: dict, nom: str) -> dict:
     return dico
 
 
-def test():
+def run_card():
     d = dict()
     t = "Tailler mon crayon", "ranger ma chambre", "tondre la pelouse", "aller à Basic Fit", " Creer un générateur de snipet"
     Cartes = ajouter_tache(d,*t)
@@ -27,5 +27,5 @@ def test():
     print(d)
     ajouter_tache(d,"seb ", "Anice")
     print(d)
-
-test()
+if __name__ == '__main__':
+    run_card()
